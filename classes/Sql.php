@@ -5,7 +5,7 @@ class Sql
     private string $serverName = "localhost";
     private string $userName = "root";
     private string $userPassword = "";
-    private string $database = "alibobo";
+    private string $database = "evalPHP";
     private object $connexion;
 
     public function __construct()
@@ -14,9 +14,7 @@ class Sql
             $this->connexion = new PDO("mysql:host=$this->serverName;dbname=$this->database", $this->userName, $this->userPassword);
             $this->connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $this->connexion->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-        }
-
-        catch(PDOException $e) {
+        } catch (PDOException $e) {
             die("Erreur : " . $e->getMessage());
         }
     }
@@ -27,7 +25,7 @@ class Sql
         if ($bind) {
             $query = $this->connexion->prepare($sql);
 
-            foreach($bindArray as $key => $value) {
+            foreach ($bindArray as $key => $value) {
                 $query->bindParam(":$key", $value[0], $value[1]);
             }
 
@@ -44,23 +42,20 @@ class Sql
     }
 
     public function select(string $sql, bool $count = false): array|int
-    {  
-        if (!$count)
-        {
+    {
+        if (!$count) {
             $resultat = $this->connexion->query($sql)->fetchAll();
             return $resultat;
-        }
-        else {
+        } else {
             $nbrResultat = $this->connexion->query($sql)->fetchColumn();
             return $nbrResultat;
         }
-
     }
 
-    public function update (string $sql): bool
-    {
+    // public function update (string $sql): bool
+    // {
 
-    }
+    // }
 
     public function delete(string $sql): bool
     {
@@ -72,7 +67,7 @@ class Sql
     }
 
     public function __destruct()
-    {   
+    {
         // if (isset($this->connexion))
         //     $this->connexion = null;
     }
