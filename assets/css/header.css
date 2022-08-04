@@ -1,0 +1,32 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     flex-direction: column;
+     background-color: #999;
+     height: 5rem;
+    
+}
+header h2{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+header nav{
+    height: 50%;
+    width: 100%;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+header nav ul li {
+    list-style: none;
+
+}
+

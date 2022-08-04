@@ -8,7 +8,7 @@
     </div>
     <div class="container_information">
         <p>Assistance</p>
-        <a href="#">plan du site</a>
+        <a href="#">Plan du site</a>
         <a href="#">Nous contacter</a>
     </div>
 </div>

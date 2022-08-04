@@ -1,0 +1,15 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./main.css');
+@import url('./table.css');
+@import url('./footer.css');
+
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color:#f00
+}

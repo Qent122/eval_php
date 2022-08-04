@@ -1,0 +1,29 @@
+footer{
+    /* position: absolute;
+    bottom: 0; */
+    background-color: #999;
+    width: 100%;
+    min-height: 5rem;
+}
+.footer{
+    display: flex ;
+    align-items: center;
+    justify-content: space-around;
+}
+.container_information{
+    /* height: 80%; */
+    /* padding: 1rem; */
+    display: flex ;
+    align-items:center;
+    /* justify-content: center; */
+    flex-direction: column;
+}
+.container_information a{
+    padding: 1rem;
+}
+
+p{
+    margin-top: 2rem;
+    text-align: center;
+    padding: 1rem;
+}
