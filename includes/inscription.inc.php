@@ -4,10 +4,12 @@
 if (isset($_POST['frmInscription'])) {
     $nom = isset($_POST['nom']) ? htmlentities(trim($_POST['nom'])) : "";
     $prenom = isset($_POST['prenom']) ? htmlentities(trim($_POST['prenom'])) : "";
+    // $pseudo = isset($_POST['pseudo']) ? htmlentities(trim($_POST['pseudo'])) : "";
     $email = isset($_POST['email']) ? htmlentities(trim($_POST['email'])) : "";
     $mdp1 = isset($_POST['mdp1']) ? htmlentities(trim($_POST['mdp1'])) :  "";
     $mdp2 = isset($_POST['mdp2']) ? htmlentities(trim($_POST['mdp2'])) :  "";
     $cgu = isset($_POST['cgu']) ? $_POST['cgu'] :  "";
+
 
 
     $erreurs = array();
@@ -17,6 +19,9 @@ if (isset($_POST['frmInscription'])) {
 
     if (mb_strlen($prenom) === 0)
         array_push($erreurs, "Veuillez saisir votre prénom");
+
+    // if (mb_strlen($pseudo) === 0)
+    //     array_push($erreurs, "Veuillez saisir un pseudo");
 
     if (mb_strlen($email) === 0)
         array_push($erreurs, "Veuillez saisir une adresse mail");

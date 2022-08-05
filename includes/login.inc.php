@@ -34,7 +34,7 @@ if (isset($_POST['frmLogin'])) {
 
     } else {
         if (verifierLogin($email,$mdp)) {
-            $recupDatasUser = "SELECT * FROM utilisateurs WHERE email='$email'";
+            $recupDatasUser = "SELECT * FROM users WHERE email='$email'";
             if ($pdo = pdo()) {
                 $datasUser = $pdo->query($recupDatasUser);
                 $datasUser = $datasUser->fetchAll();
@@ -44,7 +44,7 @@ if (isset($_POST['frmLogin'])) {
             }
 
             $_SESSION['login'] = true;
-            echo "<script>window.location.replace('http://localhost:8080/DWWM-Vernon-2022-PHP-Alibobo/')</script>";
+            echo "<script>window.location.replace('http://localhost:8888/evalPHP/')</script>";
         } else {
             echo "Erreur dans votre login/password";
         }

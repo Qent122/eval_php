@@ -3,7 +3,7 @@
 function verifierLogin($email, $motdepasse) {
     if ($pdo = pdo()) {
         if (verifierUtilisateur($email)) {
-            $recupMdp = "SELECT mdp FROM utilisateurs WHERE email='$email'";
+            $recupMdp = "SELECT mdp FROM users WHERE email='$email'";
             $resultRecupMdp = $pdo->query($recupMdp);
             $mdpBDD = $resultRecupMdp->fetchAll();
             $mdpBDD = $mdpBDD[0]['mdp'];

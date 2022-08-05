@@ -1,6 +1,6 @@
 <?php
 
-// session_start();
+session_start();
 
 // Fonction permettant le chargement automatique des classes
 spl_autoload_register(function ($className) {
