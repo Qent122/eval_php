@@ -17,6 +17,7 @@
         <nav>
             <ul>
                 <li><a href="index.php?page=accueil">Accueil</a></li>
+                <li><a href="index.php?page=articles">Articles Clients</a></li>
                 <li><a href="index.php?page=categoriesAdmin">Catégories</a></li>
                 <li><a href="index.php?page=articlesAdmin">Articles</a></li>
                 <li><a href="index.php?page=commandesAdmin">Commandes</a></li>

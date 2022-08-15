@@ -1,9 +1,43 @@
 main{
-    height: 80vh;
-    
+    min-height: 80vh;
 }
 h1{
     font-size: 2rem;
     text-align: center;
     padding: 0.5rem;
+    margin: 1rem 1rem 2rem 1rem;
 }
+.container{
+    padding: 2rem;
+    margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 30px;
+}
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 30px 90px;
+    border-radius: 20%;
+    background-color: rgb(42, 85, 204);
+   position: relative;
+   aspect-ratio: 1;
+   text-align: center;
+}
+.card h2{
+    margin: 1rem;
+    color:#fff
+
+}
+.card p{
+    color:#fff
+}
+.card button{
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+
+    }

@@ -2,7 +2,7 @@
 <div class="footer">
     <div class="container_information">
         <p>A propos</p>
-        <a href="#">Fonctionnement du site</a>
+        
         <a href="index.php?page=cgu" >Conditions générales d'utilisation</a>
         <a href="index.php?page=mentionslegales" >Mentions légales</a>
     </div>
@@ -12,7 +12,7 @@
         <a href="#">Nous contacter</a>
     </div>
 </div>
-    <p class="copy">&copy; <?php echo date('Y'); ?> - Alibobo Corporation</p>
+    <p class="copy">&copy; <?php echo date('Y'); ?> - EvalPHP Corporation</p>
 </footer>   
 </body>
 </html>
